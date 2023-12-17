@@ -1,0 +1,195 @@
+
+$bg-color: #F7F7F7;
+$text-color: #1A1511;
+$secondary-color: #787573;
+$link-color: #823300;
+$icon-color: #903800;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: $link-color;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 2px;
+  }
+}
+
+.header {
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 64px;
+  &__logo {
+    img {
+      width: 212px;
+    }
+  }
+  &__contacts {
+      text-align: right;
+        a {
+          text-align: right;
+          display: block;
+        }
+  }
+}
+
+.footer {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 24px;
+  color: $secondary-color;
+}
+
+.mb-big {
+  margin-bottom: 56px;
+}
+
+.mb-middle {
+  margin-bottom: 20px;
+}
+.mb-small {
+  margin-bottom: 6px;
+}
+.mb-xs {
+  margin-bottom: 2px;
+}
+
+.files {
+  display: flex;
+  gap: 16px;
+}
+
+body {
+  background-color: $bg-color;
+  margin: 0 48px;
+}
+
+.title {
+  color: $text-color;
+  font-family: Merriweather;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 73px;
+}
+
+.info-block {
+  margin-bottom: 56px;
+  &__title {
+    font-family: Merriweather;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 12px;
+  }
+  &__subTitle {
+    font-family: Merriweather;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 2px;
+  }
+  &__text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-color;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+  margin-top: 4px;
+  .info-block__subTitle {
+    margin-bottom: 6px;
+  }
+  div {
+    max-width: calc(50% - 12px);
+    min-width: calc(50% - 12px);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 24px;
+  &__image {
+    img {
+      max-width: 453px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-block {
+    margin-bottom: 48px;
+  }
+  .content__image {
+    img {
+      width: 288px;
+    }
+  }
+  .title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: 0 16px;
+  }
+  .header {
+    margin-bottom: 64px;
+    &__logo {
+      img {
+        width: 154px;
+      }
+    }
+  }
+
+  .files {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    font-wrap: wrap;
+    flex-direction: column-reverse;
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .wrapper {
+    div {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+}

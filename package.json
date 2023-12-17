@@ -1,0 +1,29 @@
+{
+  "name": "saninko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egorarefjev/saninko.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Egorarefjev/saninko/issues"
+  },
+  "homepage": "https://github.com/Egorarefjev/saninko#readme",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "watch-css": "sass --watch styles.scss:styles.css"
+  }
+}
